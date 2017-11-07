@@ -1,0 +1,41 @@
+package com.internousdev.spring.Const;
+
+/**
+ * サービスで利用する定数をまとめたクラス
+ * @author mitsuhashi
+ *
+ */
+public final class Constants {
+
+	/**
+	 * Constantsクラスルール
+	 */
+	private Constants() {
+
+	}
+
+	/**
+	 * Logger用ErrorMessage
+	 * @author mitsuhashi
+	 *
+	 */
+	public static class LogErrorMessage {
+		public static final String ERROR_DETECTION = "====== ERRORを検知 ======";
+		public static final String NULL_POINTER_MESSAGE = "====== NULL POINTER ERROR ======";
+		public static final String CLASS_NOT_FOUND_MESSAGE = "====== CLASS NOT FOUND ERROR ======";
+		public static final String SQL_MESSAGE = "====== SQL ERROR ======";
+		public static final String IO_MESSAGE = "====== SQL ERROR ======";
+		public static final String EXCEPTION_MESSAGE = "====== EXCEPTION ERROR ======";
+	}
+
+	public static class ExceptionMessage {
+		public static final String NULL_POINTER_EXCEPTION = "NullPointerException";
+		public static final String CLASS_NOT_FOUND_EXCEPTION = "ClassNotFoundException";
+		public static final String SQL_EXCEPTION = "SQLException";
+		public static final String EXCEPTION = "Exception";
+	}
+
+	public static class ManagerAcountSetting {
+		public static final String MANAGER_MAIL_ADDRESS = "r.mitsuhashi.internous@gmail.com";
+	}
+}
