@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8" />
-	<title>Insert title here</title>
+	<link rel="stylesheet" th:href="@{/css/common.css}" type="text/css" />
+	<title>Login</title>
 </head>
 <body>
-	<p>This is Spring Boots!</p>
+	<div>
+		<div class="text_align_center">
+			<h2 class="color_red">ログイン画面</h2>
+		</div>
+		<div class="login_form">
+			<form action="loginController" method="POST">
+				<div class="login_id">
+					<label>ログインID：</label>
+					<input class="id" type="text" name="loginId" value="" />
+				</div>
+				<div class="login_pass">
+					<label>ログインPASS：</label>
+					<input class="pass" type="password" name="loginPass" value="" />
+				</div>
+				<input type="submit" value="ログイン" />
+			</form>
+		</div>
+	</div>
 </body>
 </html>

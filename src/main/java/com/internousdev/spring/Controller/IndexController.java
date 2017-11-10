@@ -25,7 +25,7 @@ public class IndexController extends LoggerFactoryUtil{
 	public String doGet() throws Exception {
 
 		try {
-			exceptionTestInterface.getException();
+			//exceptionTestInterface.getException();
 		} catch(Exception e) {
 			super.writeException(e);
 		}

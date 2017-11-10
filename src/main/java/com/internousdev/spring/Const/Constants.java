@@ -36,6 +36,14 @@ public final class Constants {
 	}
 
 	public static class ManagerAcountSetting {
-		public static final String MANAGER_MAIL_ADDRESS = "r.mitsuhashi.internous@gmail.com";
+		public static final String MANAGER_MAIL_ADDRESS_1 = "r.mitsuhashi.internous@gmail.com";
+		public static final String TO_MAIL_ADDRESS_1 = "zozozonbi@gmail.com";
+		public static final String TO_MAIL_ADDRESS_2 = "yakou_kmk_yym_eysy@softbank.ne.jp";
+		public static final String TO_MAIL_ADDRESS_3 = "hyodo@internous.co.jp";
+ 	}
+
+	public static class EmailMessageSetting {
+		public static final String SUBJECT_NAME = "Detect Exception";
+		public static final String PROJECT_NAME = "回楽天市場";
 	}
 }

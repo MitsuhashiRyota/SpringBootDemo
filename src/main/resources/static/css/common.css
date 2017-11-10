@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 700px;
+	height: 1024px;
+	margin: 0 auto;
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+.login_form {
+	width: 200px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.login_id,.login_pass {
+	width: 200px;
+	height: 65px;
+}
