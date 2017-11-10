@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" th:href="@{/css/common.css}" type="text/css" />
+	<title>ユーザー登録</title>
+</head>
+<body>
+	<div class="text_align_center main">
+		<form th:action="@{createAccountConfirm}" th:object="@{form}" method="POST">
+			<div>
+				<label>ユーザー名</label>
+				<input type="text" th:field="*{userName}" />
+			</div>
+			<div>
+				<label>ログインID</label>
+				<input type="text" th:field="*{loginId}" />
+			</div>
+			<div>
+				<label>パスワード</label>
+				<input type="password" th:field="*{password}" />
+			</div>
+			<div>
+				<label>権限</label>
+				<span>管理者</span>
+				<input type="checkbox" th:field="*{ckUserPemission}" />
+		<!--
+				<span>ユーザー</span>
+				<input type="checkbox" name="userPermission" value="2" />
+				<span>閲覧</span>
+				<input type="checkbox" name="userPermission" value="3" />
+				 -->
+			</div>
+			<div>
+				<input type="submit" value="登録" />
+				<button type="button" onclick="location.href='http://localhost:8080/'">TOPに戻る</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

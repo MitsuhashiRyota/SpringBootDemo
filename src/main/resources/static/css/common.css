@@ -10,6 +10,12 @@ body {
 	text-align: center;
 }
 
+.main {
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+}
+
 .login_form {
 	width: 200px;
 	height: 300px;

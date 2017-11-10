@@ -102,7 +102,11 @@
 			<artifactId>velocity</artifactId>
 			<version>1.7</version>
 		</dependency>
-
+<!-- DB FlyWay -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
